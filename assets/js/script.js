@@ -16,7 +16,7 @@ function validar() {
     console.log(expresion.test(correo));
 
     if (nombre === "" || apellidos === "" || usuario === "" || correo === "" || telefono === "" || pass === "") {
-        alert("debe rellenar todos los campos");
+        alert("Debe rellenar todos los campos");
         return false;
     }
     else if
@@ -36,22 +36,22 @@ function validar() {
     }
     else if
         (usuario.length > 20) {
-        alert("excede maximo de caracteres");
+        alert("Usuario excede maximo de caracteres");
         return false;
     }
     else if
         (telefono.length > 15) {
-        alert("excede maximo de caracteres");
+        alert("Teléfono excede maximo de caracteres");
         return false;
     }
     else if
         (expresion.test(correo) === false) {
-        alert("ingrese correo correctamente");
+        alert("Ingrese correo correctamente");
         return false;
     }
     else if
         (isNaN(telefono)) {
-        alert("ingrese teléfono válido");
+        alert("Ingrese teléfono válido");
         return false;
     }
     else {
